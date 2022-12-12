@@ -87,9 +87,11 @@ body{
     margin-left: auto;
 }
 .title-site-contact{
-    margin-left: 40px;
+    margin-right: 40px;
 }
-
+.title-site-contact:first-child{
+    margin-left: 0;
+}
 .title-nav:last-child{
     margin-right: 0;
 }
@@ -163,6 +165,7 @@ body{
     color: var(--button);
 }
 .content{
+    padding-bottom: 120px;
     padding-top: 96px;
 }
 .visually-hidden {
@@ -185,12 +188,11 @@ body{
 .about-title{
     display: flex;
     flex-wrap: wrap;
-    margin-left: calc(-1 * var(--gap24));
+    gap: var(--gap24);
 
 }
 .about-title > .about-card{
-    flex-basis: calc(100% / 4 - var(--gap24));
-    margin-left: var(--gap24);
+    width: 264px;
 }
 
 
@@ -218,21 +220,19 @@ body{
     letter-spacing: 0.02em;
     text-align: center;
 }
-
+.work-list{
+    padding-bottom: 120px;
+}
 .work-item{
     display: flex;
     flex-wrap: wrap;
-    margin-left: calc(-1 * var(--gap24));
+    gap: var(--gap24);
 }
-.work-photo{
-    margin-bottom: 120px;
-    flex-basis: calc(100% / 3 - var(--gap24));
-    margin-left: var(--gap24);
-}
+
+
 .team-title{
-    padding-bottom: 72px;
+    margin-bottom: 72px;
     margin-top: 0;
-    margin-bottom: 0;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.1;
@@ -248,7 +248,7 @@ body{
     margin: 0;
     display: flex;
     flex-wrap: wrap;
-    margin-left: calc(-1 * var(--gap24));
+    gap: var(--gap24);
 }
     
 
@@ -261,8 +261,6 @@ body{
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     margin: 0;
     border-radius: 0px 0px 4px 4px;
-    flex-basis: calc(100% / 4 - var(--gap24) ) ;
-    margin-left: var(--gap24);
     
 }
 .team-thumb{
@@ -272,7 +270,7 @@ body{
 
 .team-subtitle{
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 8px;
     font-weight: 700;
     font-size: 20px;
     line-height: 1.2;
@@ -296,7 +294,7 @@ body{
     margin-left: var(--gap24);
 }
 .btn{
-    padding: 8px 16px;
+    padding: 12px 24px;
     border: 1px solid #E7E9FC;
     border-radius: 4px;
 
@@ -319,22 +317,16 @@ body{
 .card-set{
     display: flex;
     flex-wrap: wrap;
-    margin-left: calc(-1 * var(--gap24));
-    margin-top: calc(-1 * var(--gap48));
-}
-.card-set > .item{
-    border: 0.5px solid #F4F4FD;
-    flex-basis: calc(100% / 3 - var(--gap24));
-    margin-left: var(--gap24);
-    margin-top: var(--gap48);
+    gap: var(--gap48) var(--gap24);
 }
 .card-content{
+    border-top:  0.5px solid #F4F4FD;
     padding-top: 32px;
     padding-bottom: 32px;
     padding-left: 16px;
 }
 .title-list{
-    margin-top: 32px;
+    margin-top: 0;
     margin-bottom: 0;
     font-weight: 700;
     font-size: 20px;
@@ -351,7 +343,7 @@ body{
 
 }
 .footer{
-    padding: 100px 156px;
+    padding: 100px 0;
     background: var(--primary-text-color);
 }
 .footer-logo{
